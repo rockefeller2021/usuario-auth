@@ -51,7 +51,7 @@ func main() {
 	if getEnv("REPO", "memory") == "mysql" {
 		dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true&charset=utf8mb4&collation=utf8mb4_unicode_ci",
 			getEnv("MYSQL_USER", "root"),
-			getEnv("MYSQL_PASSWORD", "Isaac2013*"),
+			getEnv("MYSQL_PASSWORD", ""),
 			getEnv("MYSQL_HOST", "localhost"),
 			getEnv("MYSQL_PORT", "3306"),
 			getEnv("MYSQL_DATABASE", "usuario_auth"),
